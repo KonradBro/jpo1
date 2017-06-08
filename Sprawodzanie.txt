@@ -1,0 +1,58 @@
+Omówienie wyników działania programu:
+
+
+-Tworzymy obiekt używajac konstruktora domyslnego,program wylicz moment bezwładnosci i wyświetla informacje w konsoli
+-Tworzymy obiekt używając konstruktora z parametrami,program wylicza moment bezwladnosci i wyświetla informacje
+-Zmieniamy mase za pomocą akcesora i za pomocą metody setMasa(), program wylicza i wyświetla informacje dla obiektu
+-Tworzymy tablce obiektów, tablica 6 elementowa, losuje za pomoca Klasy Math i metody random liczby.
+Następnie wyświetla informacje dla każdego obiektu z tablicy.
+-Tworzymy bryłe składająca się z n ( okreslamy ilość) pktów materialnych o tym samym promieniu, ale różnej masie. Następnie wyświetla informacje na temat bryły.
+
+
+
+
+Odpowiedzi na pytania:
+
+Ad 1)
+
+-public oznacza to, że dostęp do danej metody, pola oraz definicji klasy ma każdy obiekt
+-protected oznacza to, że dostęp maja tylko obiekty znajdujące się poniżej w tej samej hierarchii klas
+-private oznacza to, że żaden inny obiekt nie bedzie mógł się odwolać do zawartości prywatnej w tej że klasie
+
+Ad 2)
+
+Akcesory mają za zadanie zwrócić, ustawić wartość pola klasy, który jest prywatny. Wiąża się one z typem prywatnym, deklarujemy je jako publiczne.
+
+Ad 3)
+Konstruktury mogą być:
+a)domyślne ustawiamy wartości na zadane przy tworzeniu konstrukora np :
+	
+-	Czarodziej()
+	{
+	 int Mana = 1000;
+	 int Health = 200;
+	}
+- tworząc obiekt:
+
+Czarodziej cz = new Czarodziej();
+
+b)z parametrami tworząc obiekt ustawiamy wartosci np.
+	
+-	Czarodziej(int Mana, int Health)
+	{
+	 this.Mana = Mana;
+	 this.Health = Health;
+	}
+- tworząc obiekt:
+
+Czarodziej cz = new Czarodzien(1000,200);
+
+Ad 4)
+
+Metody służa do operacjach na obiektach, mają różne zastosowanie m.in:
+
+a) zwracają wartość danego pola klasa typu np. int , boolen , char ... (muszą zawierac słowo kluczower return parametr;)
+b) ustawiaja wartosci danego pola klasy typu void nie zawieraja słowa return;
+
+
+
